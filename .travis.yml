@@ -4,7 +4,11 @@ node_js:
   - "12"
 
 script:
-    - npm install
+    # - npm install
     # - npm test
     # - npm run start
-    - npm run build
+    - CI=false npm run build
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
