@@ -1,9 +1,7 @@
 .book_container{
   display: flex;
-  /* flex: 1; */
-  height: 300px;
+  flex: 1;
   flex-flow: column;
-  margin-right: 20px;
 }
 
 .book_container:last-child{
