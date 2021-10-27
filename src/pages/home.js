@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Section from '../components/Section'
+import Section from '../components/section/Section'
 import {homeScreenBookData, moreData} from '../const/homeScreenData'
 import promo from '../assets/img/promo.png'
 
@@ -10,24 +10,22 @@ function HomeScreen() {
         console.log('Beranda')
     }
     return (
-        <div style={{ margin: '20px', paddingBottom: '50px'}}>
-            <img src={promo} alt="promoImage" style={{
-                borderRadius: '20px',
-                height:'auto',
-                maxWidth: '100%',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                display: 'block',
-            }}/>
+        <div style={{ paddingBottom: '50px', justifyContent: 'center', maxWidth: '1300px', marginRight: '25px', marginLeft: '25px'}}>
             <div style={{
-                display: 'block',
-                backgroundImage: `url(${promo})`,
-                backgroundSize: 'cover',
+                overflow: 'hidden',
                 borderRadius: '20px',
-                height:'auto',
-                maxWidth: '100%',
-            }} />
-            <Section title="Rekomendasi" data={moreData}/>
+                margin: '10px'
+                }}>
+                <img src={promo} alt="promoImage" style={{
+                    display: 'block',
+                    width: '100%',
+                    maxWidth: '100%',
+                    height: 'auto',
+                    maxHeight: '100%',
+                    objectFit: 'cover'
+                }}/>
+            </div>
+            <Section title="Rekomendasi" data={homeScreenBookData}/>
             <Section title="Cerita Riddle" data={moreData}/>
             <Section title="Terpopuler Minggu Ini" data={homeScreenBookData}/>
         </div>

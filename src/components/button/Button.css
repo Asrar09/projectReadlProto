@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    width: inherit;
+    background-color: #F2994A;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container:hover {
+    cursor: pointer;
+}
+
+.button-text {
+    text-align: center;
+    color: #ffffff
+}

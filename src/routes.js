@@ -1,48 +1,23 @@
+import React from 'react';
+import { Route } from 'react-router-dom'
+import HomeScreen from './pages/home'
+import Bantuan from './pages/bantuan'
+import Category from './pages/category'
+import About from './pages/about'
+import bookSummary from './pages/bookSummary'
+import Read from './pages/read'
 
-export const Routes = {
-    // pages
-    Presentation: { path: "/" },
-    DashboardOverview: { path: "/read" },
-    Transactions: { path: "/transactions" },
-    Settings: { path: "/settings" },
-    Upgrade: { path: "/upgrade" },
-    BootstrapTables: { path: "/tables/bootstrap-tables" },
-    Billing: { path: "/examples/billing" },
-    Invoice: { path: "/examples/invoice" },
-    Signin: { path: "/examples/sign-in" },
-    Signup: { path: "/examples/sign-up" },
-    ForgotPassword: { path: "/examples/forgot-password" },
-    ResetPassword: { path: "/examples/reset-password" },
-    Lock: { path: "/examples/lock" },
-    NotFound: { path: "/examples/404" },
-    ServerError: { path: "/examples/500" },
+function Routes() {
+  return (
+    <>
+        <Route exact path='/' component={HomeScreen} />
+        <Route exact path='/bantuan' component={Bantuan} />
+        <Route exact path='/kategori' component={Category} />
+        <Route exact path='/tentang-kami' component={About} />
+        <Route path='/summary' component={bookSummary} />
+        <Route path='/Read' component={Read} />
+    </>
+  );
+}
 
-    // docs
-    DocsOverview: { path: "/documentation/overview" },
-    DocsDownload: { path: "/documentation/download" },
-    DocsQuickStart: { path: "/documentation/quick-start" },
-    DocsLicense: { path: "/documentation/license" },
-    DocsFolderStructure: { path: "/documentation/folder-structure" },
-    DocsBuild: { path: "/documentation/build-tools" },
-    DocsChangelog: { path: "/documentation/changelog" },
-
-    // components
-    Accordions: { path: "/components/accordions" },
-    Alerts: { path: "/components/alerts" },
-    Badges: { path: "/components/badges" },
-    Widgets: { path: "/widgets" },
-    Breadcrumbs: { path: "/components/breadcrumbs" },
-    Buttons: { path: "/components/buttons" },
-    Forms: { path: "/components/forms" },
-    Modals: { path: "/components/modals" },
-    Navs: { path: "/components/navs" },
-    Navbars: { path: "/components/navbars" },
-    Pagination: { path: "/components/pagination" },
-    Popovers: { path: "/components/popovers" },
-    Progress: { path: "/components/progress" },
-    Tables: { path: "/components/tables" },
-    Tabs: { path: "/components/tabs" },
-    Tooltips: { path: "/components/tooltips" },
-    Toasts: { path: "/components/toasts" },
-    WidgetsComponent: { path: "/components/widgets" }
-};
+export default Routes;

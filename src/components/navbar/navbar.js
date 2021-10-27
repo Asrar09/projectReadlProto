@@ -5,10 +5,13 @@ import SearchBar from '../SearchBar'
 import notification from '../../assets/img/notification.png'
 import profilesample from '../../assets/img/profilesample.png'
 import './navbar.css'
+import Category from '../category/category';
 
 function Navbar({ title }) {
 
     const [navClick, setNavClick] = useState(false);
+    const [categoryClick, setCategoryClick] = useState(false);
+    const [navListClick, setNavCLicked] = useState('Beranda');
 
     useEffect(() => {
         // Update the document title using the browser API
@@ -19,6 +22,7 @@ function Navbar({ title }) {
 
     return (
         <nav className="NavbarItems">
+            {categoryClick && <Category />}
             <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <img src={header_logo} alt="headerLogo" className="navbar-logo"/>
                 {/* <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1> */}
@@ -28,9 +32,16 @@ function Navbar({ title }) {
                 <div className='invisble-div' />
                 <ul className={navClick ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
+                        if(item.title === 'Kategori'){
+                            return(
+                            <li>
+                                <div onClick={() => {setCategoryClick(!categoryClick)}} className={item.cName} href={item.url}>{item.title}</div>
+                            </li>
+                            )
+                        }
                         return(
                             <li>
-                                <a className={item.cName} href={item.url}>{item.title}</a>
+                                <a onClick={() => {setNavCLicked(item.cName)}} className={item.cName} href={item.url}>{item.title}</a>
                             </li>
                         )
                     })

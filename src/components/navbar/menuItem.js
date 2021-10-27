@@ -7,7 +7,7 @@ export const MenuItems = [
     {
         title: 'Kategori',
         url: 'kategori',
-        cName: 'nav-links'
+        cName: 'nav-category'
     },
     {
         title: 'Tentang Kami',

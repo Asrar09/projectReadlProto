@@ -5,8 +5,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
     box-shadow: 0px 0px 5px;
+    z-index: 0;
 }
 
 .navbar-logo {
@@ -40,6 +41,20 @@
 }
 
 .nav-links:hover {
+    color: #FF7800;
+    text-decoration: underline;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.nav-category {
+    color: #000000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-category:hover {
+    cursor: pointer;
     color: #FF7800;
     text-decoration: underline;
     border-radius: 4px;
@@ -138,6 +153,7 @@
     }
 
     .nav-links-mobile {
+        z-index: 10;
         display: block;
         text-align: center;
         padding: 1.5rem;

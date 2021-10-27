@@ -7,17 +7,19 @@ import book4 from '../assets/img/book4.png'
 import book5 from '../assets/img/book5.png'
 import Navbar from '../components/navbar/navbar'
 
-function Category() {
+function Bantuan() {
+
+    const [navClick, setNavClick] = useState(false);
 
     const onClickBeranda = () => {
         console.log('Beranda')
     }
     return (
         <div style={{ margin: '20px', paddingBottom: '50px'}}>
-            <h1>Category</h1>
+            <h1>Bantuan</h1>
         </div>
     )
 }
 
 
-export default Category
+export default Bantuan
