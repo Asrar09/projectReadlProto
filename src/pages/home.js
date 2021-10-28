@@ -10,7 +10,7 @@ function HomeScreen() {
         console.log('Beranda')
     }
     return (
-        <div style={{ paddingBottom: '50px', justifyContent: 'center', maxWidth: '1300px', marginRight: '25px', marginLeft: '25px'}}>
+        <div style={{ paddingBottom: '50px', justifyContent: 'center', maxWidth: '1300px', marginRight: '30px', marginLeft: '30px'}}>
             <div style={{
                 overflow: 'hidden',
                 borderRadius: '20px',

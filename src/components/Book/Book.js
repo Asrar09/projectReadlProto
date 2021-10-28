@@ -31,7 +31,6 @@ const Book = ({ props }) => {
             <a href={`/summary/${props.id}`} style={{display: 'flex', flexFlow: 'row', marginBottom: '5px', height: 'auto'}}>
                 <div style={{width: '20px', backgroundColor: props.sideColor}}/>
                 <div style={{
-                    position: 'relative',
                     width: '100%',
                     overflow: 'hidden',
                     backgroundSize : 'contain',
