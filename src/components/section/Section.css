@@ -15,20 +15,23 @@
 .section-book-container {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(5, 19%);
-    grid-auto-rows: minmax(300px, auto)
+    grid-template-columns: repeat(6, 15%);
+    grid-auto-rows: minmax(350px, auto);
+    justify-content: center
     /* flex-direction: row; */
 }
 
 @media only screen and (max-width: 1024px) {
     .section-book-container {
-      grid-template-columns: 32% 32% 32% ;
+      grid-template-columns: repeat(3, 30%);
+      grid-auto-rows: minmax(250px, auto);
     }
   }
 
 @media screen and (max-width: 768px) {
     .section-book-container {
-      grid-template-columns: 48% 48% ;
+      grid-template-columns: repeat(2, 45%);
+      grid-auto-rows: minmax(200px, auto);
     }}
 
     

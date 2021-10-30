@@ -39,16 +39,36 @@ const Category = ({ props }) => {
                     </div>
                     <div>
                         <h1>Kategori Seluruhnya</h1>
-                        <div>
+                        <div style={{ display: 'grid' }}>
                             <div>
                                 <h5>A</h5>
+                                <div>
+                                    <ul>
+                                        <li>Anak</li>
+                                        <li>Drama</li>
+                                        <li>Anak</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div>
-                                <ul>
-                                    <li>Anak</li>
-                                    <li>Drama</li>
-                                    <li>Anak</li>
-                                </ul>
+                                <h5>B</h5>
+                                <div>
+                                    <ul>
+                                        <li>Brother</li>
+                                        <li>Bear</li>
+                                        <li>Besar</li>
+                                        <li>Banter</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>C</h5>
+                                <div>
+                                    <ul>
+                                        <li>Cacing</li>
+                                        <li>Cicak</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

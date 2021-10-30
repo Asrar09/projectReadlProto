@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import Book from '../components/Book/Book'
-import Button from '../components/button/Button'
-import {homeScreenBookData, moreData} from '../const/bookSummaryData'
-import promo from '../assets/img/promo.png'
-import author1 from '../assets/img/author_1.jpg'
-import book1 from '../assets/img/book1.png'
-import Icon from '@material-ui/core/Icon'
-import {bookData1} from '../const/bookSummaryData'
-import '../Common.css'
+import Book from '../../components/Book/Book'
+import Button from '../../components/button/Button'
+import author1 from '../../assets/img/author_1.jpg'
+import book1 from '../../assets/img/book1.png'
+import {bookData1} from '../../const/bookSummaryData'
+import './bookSummary.css'
+import '../../Common.css'
 
 
 function bookSummary() {
@@ -33,27 +31,24 @@ function bookSummary() {
     const textData = "Aku memasuki kamarku yang masih bernuansa gelap, biasanya mama membangunkanku dengan membuka tirai jendela kamar dan membiarkan cahaya matahari menyilaukan pandanganku agar aku terbangun. Tapi jujur saja, aku lebih suka suasana kamar seperti ini dimana aku bisa menyalakan lampu tumblr yang menghiasi kamar dengan gemerlapnya. Aku duduk mengambil posisi nyaman, menyalakan laptop, menyuap sereal, dan memutar lagunya Powfu. Kubuka pesan dari teman onlineku yang bernama Miggie itu. Rupanya dia menyarankanku untuk mengunjungi sebuah situs forum yang sedang populer, katanya cukup ramai penulis freelance mempromosikan tulisannya disana. Okay, menurutku tidak ada salahnya aku mencoba, aku langsung menekan link yang dicantumkan. Terhubunglah aku dengan situs tersebut yang bernama “COCOA”, sebuah web forum dengan banyak ragam thread."
 
     return (
-        <div style={{ paddingTop: '20px', paddingBottom: '50px', backgroundColor: '#FEF9F4'}}>
+        <div class="book-summary-container">
             <div style={{
                 display: 'flex',
-                width: '100%',
                 marginBottom: '30px',
-                padding: '0px 20px 0px 20px',
                 justifyContent: 'center',
                 alignContent: 'center',
-                flexDirection: 'row'
             }}>
-                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',
-                alignContent: 'center'}}>
+                {/* <Book props={bookData1}/> */}
+                <div style={{display: 'flex'}}>
                      <Book props={bookData1}/>
                 </div>
             </div>
-            <div style={{ display: 'flex' ,width: '100%', marginBottom: '10px',  padding: '20px', alignContent: 'center', justifyContent: 'center'}}>
-                <p class='readingTextStyle' style={{whiteSpace: 'pre-line', width: '1000px', textIndent: '50px', lineHeight: '1.8', textAlign: 'justify'}}>
+            <div class="book-summary-text-container">
+                <p class='readingTextStyle book-summary-text'>
                  {textData}
                 </p>
             </div>
-            <center><a href={`/read/12`} style={{ display: 'flex' , width: '300px' , padding: '20px', justifyContent: 'center'}}>
+            <center><a href={`/read/12`} class="book-summary-mulai-button">
                 <Button text={'Mulai Membaca'} />
             </a></center>
         </div>

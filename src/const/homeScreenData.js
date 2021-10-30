@@ -49,6 +49,15 @@ export const homeScreenBookData = [{
     bookmarkCount: '100',
     sideColor: '#FAE4EC',
     bookImage: book5,
+}, {
+    id: 6,
+    title: 'The Steps to Him',
+    author: 'Achanchill',
+    likeCount: '100',
+    viewCount: '200',
+    bookmarkCount: '100',
+    sideColor: '#FAE4EC',
+    bookImage: book5,
 }]
 
 export const moreData = [{

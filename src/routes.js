@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import HomeScreen from './pages/home'
-import Bantuan from './pages/bantuan'
+import HomeScreen from './pages/home/home'
+import Bantuan from './pages/bantuan/bantuan'
 import Category from './pages/category'
-import About from './pages/about'
-import bookSummary from './pages/bookSummary'
-import Read from './pages/read'
+import About from './pages/about/about'
+import bookSummary from './pages/bookSummary/bookSummary'
+import Read from './pages/read/read'
 
 function Routes() {
   return (

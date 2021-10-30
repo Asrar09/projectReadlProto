@@ -1,0 +1,37 @@
+.book-summary-container{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #FEF9F4;
+}
+
+.book-summary-cover{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.book-summary-text-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.book-summary-text {
+    white-space: pre-line;
+    width: 1000px;
+    text-indent: 50px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.book-summary-mulai-button {
+    display: flex;
+    width: 300px;
+    padding: 20px;
+    justify-content: center;
+}
+

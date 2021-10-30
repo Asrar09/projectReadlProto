@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
-import Book from '../components/Book/Book'
-import Button from '../components/button/Button'
-import {homeScreenBookData, moreData} from '../const/bookSummaryData'
-import promo from '../assets/img/promo.png'
-import author1 from '../assets/img/author_1.jpg'
-import book1 from '../assets/img/book1.png'
-import Icon from '@material-ui/core/Icon'
-import {bookData1} from '../const/bookSummaryData'
-import '../Common.css'
+import Button from '../../components/button/Button'
+import '../../Common.css'
 
 
 function Read() {
