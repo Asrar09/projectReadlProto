@@ -28,7 +28,7 @@ const Book = ({ props }) => {
 
     return (
         <div class='book_container'>
-            <a href={`/summary/${props.id}`} style={{display: 'flex', flexFlow: 'row', marginBottom: '5px', height: 'auto'}}>
+            <a href={`/Summary/${props.id}`} style={{display: 'flex', flexFlow: 'row', marginBottom: '5px', height: 'auto'}}>
                 <div style={{width: '20px', backgroundColor: props.sideColor}}/>
                 <div style={{
                     width: '100%',
@@ -54,7 +54,7 @@ const Book = ({ props }) => {
                     </div>
                     <div className={"center"} style={{fontSize: '12px', marginRight: '5px'}}>
                         <Icon style={{ color: '#828282', marginRight: '5px', fontSize: '12px'}}>{'bookmarkBorder'}</Icon>{props.bookmarkCount}
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
-
+import './category.css'
+import {generalCategory, detailedCategory} from '../../const/categoryData'
 
 const Category = ({ props }) => {
 
@@ -22,54 +23,44 @@ const Category = ({ props }) => {
         <div style={{
             position: 'absolute',
             right: 0,
-            top: 100,
-            left: 190,
+            top: 75,
+            left: 60,
             bottom: 0,
-            boxShadow: '0 6px 20px rgba(56, 125, 255, 0.17)',
+            width: '80%',
             zIndex: 1}}>
-                <div style={{   
+                <div style={{
+                    padding: '20px',
                     borderRadius: '20px',
-                    backgroundColor: 'red',
-                    width: '80%',
-                    zIndex: 1
+                    backgroundColor: '#ffffff',
+                    paddingBottom: '30px',
+                    zIndex: 1,
+                    boxShadow:' 0px 0px 5px',
                 }}>
-                    <h1>Kategori Besar:</h1>
-                    <div>
-
+                    <p>Kategori Besar:</p>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        {generalCategory.map((category, index) => {
+                            return<div style={{ fontSize: '15px', backgroundColor:"#F2F2F2", margin: '10px', padding: '10px', borderRadius: '100px' }}>
+                                {category.categoryName}
+                            </div>
+                        })}
                     </div>
                     <div>
-                        <h1>Kategori Seluruhnya</h1>
-                        <div style={{ display: 'grid' }}>
-                            <div>
-                                <h5>A</h5>
-                                <div>
-                                    <ul>
-                                        <li>Anak</li>
-                                        <li>Drama</li>
-                                        <li>Anak</li>
+                        <p>Kategori Seluruhnya</p>
+                        <div className='category-detail-container'>
+                            {detailedCategory.map((category, index) => {
+                                return <div style={{display: 'flex', flexDirection: 'row'}}>
+                                    <p style={{ color: '#E0E0E0', fontSize: '32px', paddingRight: '10px', fontWeight: 'bold' }}>{category.categoryInitial}</p>
+                                    <ul style={{listStyleType: 'none'}}>
+                                    {category.categoryName.map((categoryName, index) => {
+                                        return <li>
+                                            <a href={""} style={{ textDecoration: 'none', display: 'block', fontSize: '12px', color:'#333333'}}>
+                                                {categoryName}
+                                            </a>
+                                        </li>
+                                    })}
                                     </ul>
                                 </div>
-                            </div>
-                            <div>
-                                <h5>B</h5>
-                                <div>
-                                    <ul>
-                                        <li>Brother</li>
-                                        <li>Bear</li>
-                                        <li>Besar</li>
-                                        <li>Banter</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <h5>C</h5>
-                                <div>
-                                    <ul>
-                                        <li>Cacing</li>
-                                        <li>Cicak</li>
-                                    </ul>
-                                </div>
-                            </div>
+                                })}
                         </div>
                     </div>
                 </div>

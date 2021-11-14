@@ -46,9 +46,7 @@ const Section = ({ title, data }) => {
             </div>
             <div className= 'section-book-container'>
                 {data.map((book, index) => {
-                    if (index > 5) return null
                     return<Book props={book}/>
-                   
                 })}
             </div>
         </div>

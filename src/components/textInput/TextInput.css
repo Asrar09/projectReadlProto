@@ -1,0 +1,18 @@
+.text-input-container {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    width: inherit;
+    background-color: #F2994A;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-input-container:hover {
+    cursor: pointer;
+}
+
+.text-input-text {
+    text-align: center;
+    color: #ffffff
+}

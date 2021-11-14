@@ -6,17 +6,22 @@ export const MenuItems = [
     },
     {
         title: 'Kategori',
-        url: 'kategori',
+        url: 'Kategori',
         cName: 'nav-category'
     },
     {
         title: 'Tentang Kami',
-        url: 'tentang-kami',
+        url: 'Tentang-kami',
         cName: 'nav-links'
     },
     {
         title: 'Bantuan',
-        url: 'bantuan',
+        url: 'Bantuan',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Menulis',
+        url: 'Write',
         cName: 'nav-links'
     },
 ]

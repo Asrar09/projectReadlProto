@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Button from '../../components/button/Button'
-import '../../Common.css'
 
 
 function Read() {
@@ -50,7 +49,7 @@ function Read() {
     }
 
     return (
-        <div style={{ paddingTop: '20px', paddingBottom: '50px', backgroundColor: '#FEF9F4'}}>
+        <div style={{ paddingTop: '80px', paddingBottom: '50px', backgroundColor: '#FEF9F4'}}>
             <center>
             <div style={{ maxWidth: '1000px', padding: '20px'}}>
                 <h1 class='readingTextStyle' style={{marginBottom: '5px', textAlign: 'justify', fontSize: '24px', color: '#828282'}}>{bookData.bookTitle}</h1>

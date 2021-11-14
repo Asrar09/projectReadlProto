@@ -4,6 +4,7 @@ import header_logo from '../../assets/img/header_logo.png'
 import SearchBar from '../SearchBar'
 import notification from '../../assets/img/notification.png'
 import profilesample from '../../assets/img/profilesample.png'
+import Icon from '@material-ui/core/Icon'
 import './navbar.css'
 import Category from '../category/category';
 
@@ -30,17 +31,19 @@ function Navbar({ title }) {
                     <i className={navClick ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <div className='invisble-div' />
+                <div></div>
                 <ul className={navClick ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         if(item.title === 'Kategori'){
                             return(
-                            <li>
+                            <li style={{display: 'flex', flexDirection:'row', alignItems: 'center'}}>
                                 <div onClick={() => {setCategoryClick(!categoryClick)}} className={item.cName} href={item.url}>{item.title}</div>
+                                {!navClick && <Icon style={{ color: '#828282', marginRight: '5px', fontSize: '25px'}}>{'arrow_drop_down'}</Icon>}
                             </li>
                             )
                         }
                         return(
-                            <li>
+                            <li style={{display: 'flex', flexDirection:'row', alignItems: 'center'}}>
                                 <a onClick={() => {setNavCLicked(item.cName)}} className={item.cName} href={item.url}>{item.title}</a>
                             </li>
                         )

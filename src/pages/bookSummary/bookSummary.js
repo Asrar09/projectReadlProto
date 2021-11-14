@@ -48,7 +48,7 @@ function bookSummary() {
                  {textData}
                 </p>
             </div>
-            <center><a href={`/read/12`} class="book-summary-mulai-button">
+            <center><a href={`/Read/12`} class="book-summary-mulai-button">
                 <Button text={'Mulai Membaca'} />
             </a></center>
         </div>
